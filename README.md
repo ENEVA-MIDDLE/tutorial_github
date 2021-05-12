@@ -22,7 +22,9 @@
   Agora precisamos do sotware GIT! Se você usa o Windows, recomendo baixar o [git bash](https://git-scm.com/download/win). Baixe o arquivo compatível com seu sistema e na instalação dê "next" e "aceito" padrões desse sistema operacional.
   Verifique se o GIT foi instalado corretamente! abra o CMD e digite o comando
   
-```git --version```
+```
+git --version
+```
   
  </p>
 
