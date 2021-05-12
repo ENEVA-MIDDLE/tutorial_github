@@ -10,7 +10,7 @@
   Legal! Mas quero começar a usar isso logo, como faz !?
 </p>
 
-<h4>Vamos então aos pré-requisitos: </h4>
+<h3>Vamos então aos pré-requisitos: </h3>
 <p align="center">
  <a href="#cadastro_no_github">Cadastro no github</a> •
  <a href="#git_bash">GIT BASH</a> • 
