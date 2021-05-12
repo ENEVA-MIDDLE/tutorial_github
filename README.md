@@ -48,3 +48,19 @@ git config --global --list
 O argumento `--global` diz ao Git para sempre usar essas informações para qualquer coisa que você fizer em seu sistema. Se você omitir `--global` ou usar `--local`, a configuração será aplicada apenas ao repositório atual.
 </p>
 
+<h3>Comandos básicos do GIT/GIThub </h3>
+<p>
+Partiremos de um repositório criado no github! seja ele criado por você do zero ou por outros (que aliás é bem simples de criar, então dispensarei tutoriais sobre isso).
+
+O primeiro passo é clonar o repositório remoto em sua máquina para começar a trabalhar com ele. Para clona-lo pegue o link http do repositório, igual na imagem abaixo
+![image](https://user-images.githubusercontent.com/57183317/118031490-fa14aa00-b33c-11eb-828b-1f2e0fa532dd.png)
+
+Agora rode o comando:
+```
+git clone <link_https>
+```
+e pronto! uma pasta com o mesmo nome do repositório aparecerá em sua máquina.
+
+
+
+</p>
