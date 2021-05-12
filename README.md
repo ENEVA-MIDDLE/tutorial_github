@@ -62,7 +62,7 @@ git clone <link_https>
 ```
 e pronto! uma pasta com o mesmo nome do repositório aparecerá em sua máquina.
 
-##Agora vamos falar sobre git add, git commit e git push (comece a internalizar na sua mente esses comandos, eles são essenciais hehe)
+## Agora vamos falar sobre git add, git commit e git push (comece a internalizar na sua mente esses comandos, eles são essenciais hehe)
 
 Repositório clonado! está na hora de botar as mãos na massa! Você já criou um script e uma subpasta "informacoes" com dois arquivos .txt e se pergunta "como faço pra usar o GIT/GIThub agora!?", simples jovem!
 Abra seu Gitbash e vá até a pasta do seu repositório (você pode clicar com o botão direito numa parte em branco da pasta e selecionar "git bash here" ou navegar até o diretório através do comando `cd caminho/até/diretorio` )
@@ -96,5 +96,73 @@ git pull
 git status
 ```
 
-#### Trabalhando com 
+#### Trabalhando com versionamento - cancelando últimas versões
+
+- "Minha última versão do script não ta funcionando, quero voltar na anterior, como faço?!" - Beleza! Primeiro precisamos saber a qual commit/HEAD você precisa retornar e faze-lo.
+Para ver a lista de commits/HEADs use o comando:
+```
+git reflog
+```
+A saída deve ser algo com essa carinha:
+`67d0673 (HEAD -> master, origin/master, origin/HEAD) HEAD@{0}: commit: Adiciona footer
+a76b759 HEAD@{1}: Fast forward branch master to branch master
+aa4a59c HEAD@{2}: commit: Ajustes gerais em CSS
+7f13308 HEAD@{3}: commit: Adicionando HTML e CSS
+dc206da HEAD@{4}: commit: Commit inicial`
+
+Digamos que você precisa voltar no commit anterior, ele seria então o equivalente ao HEAD@{1}. Para retornar, use:
+```
+git reset --hard HEAD@{1}
+```
+
+Para salvar esse "retorno/exclusão de commit" no repositório remoto use o comando:
+```
+git push origin HEAD --force
+```
+
+#### Trabalhando com branch - pare de usar arquivo(cópia 1), arquivo(cópia 2), arq....
+
+Não use cópias, use branches! Essa frase anterior é bem bacana, por causa que ela já exemplifica o que é uma branch! Uma branch nada mais é do que uma versão paralela do código principal (que possui o nome Main ou Master default). Esse recurso é muito útil caso você queira fazer uma alteração no código mas não quer atrapalhar o código de produção com possíveis novos erros.
+O exemplo clássico é o de um arquivo html pronto e funcional, você recebe a missão de adicionar um botão ao script mas não quer correr o risco de estragar o resto do código. Então cria uma branch para essa missão (nomeie a branch especificamente para essa tarefa), faça as alterações! teste muito! Tudo ok? Agora pode incluir no código principal Main/Master de produção através do comando MERGE.
+
+Crie a branch com o comando (esse comando também serve para entrar em branchs já criadas):
+```
+git checkout -b nome_da_branch
+```
+Fez as alterações que queria? vamos salvar esse ponto do versionamento também!
+```
+git add nome_script
+git commit -m "PALAVRA_CHAVE: descrição curta das alterações"
+```
+Na hora do push, vamos subir nossa branch específica ao repositório remoto com o comando:
+```
+git push origin nome_da_branch
+```
+No Github já veremos a nova branch, e podemos acessar a qualquer momento as duas versões paralelas do código. Pela plataforma você pode usar a funcionalidade MERGE, que nada mais é do que adicionar as alterações ao script principal (é um processo equivalente ao commit). Após feito o merge, exclua a branch ;)
+
+Para ver as branchs locais, rode o comando:
+```
+git branch
+```
+
+Para ver as branchs remotas, rode o comando(ou olhe no github):
+```
+git branch -r
+```
+
+Para ver todas as branchs locais e remotas, rode o comando:
+```
+git branch -a
+```
+
+Para deletar branchs remotas, rode o comando:
+```
+git push origin --delete nome_da_branch
+```
+
+Para deletar branchs locais, rode o comando:
+```
+git branch -D nome_da_branch
+```
+
 </p>
