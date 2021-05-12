@@ -25,7 +25,9 @@
 ```
 git --version
 ```
-  
+ o resultados será algo semelhante a isso:
+ ![image](https://user-images.githubusercontent.com/57183317/118011509-7fd92b00-b326-11eb-808a-db4adaeafd26.png)
+
  </p>
 
 
