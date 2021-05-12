@@ -104,6 +104,7 @@ Para ver a lista de commits/HEADs use o comando:
 git reflog
 ```
 A saída deve ser algo com essa carinha:
+
 `67d0673 (HEAD -> master, origin/master, origin/HEAD) HEAD@{0}: commit: Adiciona footer
 a76b759 HEAD@{1}: Fast forward branch master to branch master
 aa4a59c HEAD@{2}: commit: Ajustes gerais em CSS
