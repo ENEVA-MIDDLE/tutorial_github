@@ -3,7 +3,7 @@
 
 <p> 
 	O GIT é um software de versionamento de códigos, voltado a facilitar a gestão das versões e atualizações em scripts.
-  Sua lógica gira em torno de alterarmos um arquivo normalmente e então o adicionarmos, através de comandos, numa área pré-salvamento (git add) e salvar(git commit). A partir desse momento termos um commit, que é um ponto onde uma versão do projeto foi salva, como se fosse uma foto do código no momento 📸
+  Sua lógica gira em torno de alterarmos um arquivo normalmente e então o adicionarmos, através de comandos, numa área pré-salvamento (git add) e salvar(git commit). A partir desse momento temos um commit, que é um ponto onde uma versão do projeto foi salva, como se fosse uma foto do código no momento 📸
   
   O GITHUB nada mais é do que o repositório web (ou plataforma, se preferir chamar assim) do mesmo repositório GIT em sua máquina local 😉
   
