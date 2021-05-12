@@ -13,7 +13,7 @@
 <h3>Vamos então aos pré-requisitos: </h3>
 <p align="center">
  <a href="#cadastro_no_github">Cadastro no github</a> •
- <a href="#git_bash">GIT BASH</a> • 
+ <a href="#git_bash">GIT BASH</a>
 </p>
 
 <p>
@@ -22,7 +22,7 @@
   Agora precisamos do sotware GIT! Se você usa o Windows, recomendo baixar o [git bash](https://git-scm.com/download/win). Baixe o arquivo compatível com seu sistema e na instalação dê "next" e "aceito" padrões desse sistema operacional.
   Verifique se o GIT foi instalado corretamente! abra o CMD e digite o comando
   
-`git --version`
+```git --version```
   
  </p>
 
