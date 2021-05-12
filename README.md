@@ -17,9 +17,9 @@
 </p>
 
 <p>
-  Antes de mais nada, crie sua conta na plataforma GITHUB. Para criar é bem simples, intuitivo e totalmente gratuito. Entre na área de login, click em sign up e siga preencha os dados necessários de sua preferencia.
+ 	Antes de mais nada, crie sua conta na plataforma GITHUB. Para criar é bem simples, intuitivo e totalmente gratuito. Entre na área de login, click em sign up e siga preencha os dados necessários de sua preferencia.
   
-  Agora precisamos do sotware GIT! Se você usa o Windows, recomendo baixar o [git bash](https://git-scm.com/download/win). Baixe o arquivo compatível com seu sistema e na instalação dê "next" e "aceito" padrões desse sistema operacional.
+	Agora precisamos do sotware GIT! Se você usa o Windows, recomendo baixar o [git bash](https://git-scm.com/download/win). Baixe o arquivo compatível com seu sistema e na instalação dê "next" e "aceito" padrões desse sistema operacional.
   Verifique se o GIT foi instalado corretamente! abra o CMD e digite o comando
   
 ```
@@ -27,7 +27,9 @@ git --version
 ```
  o resultados será algo semelhante a isso:
  ![image](https://user-images.githubusercontent.com/57183317/118011509-7fd92b00-b326-11eb-808a-db4adaeafd26.png)
-
  </p>
+ 
+<h3>Configurando o GIT </h3>
+	Para
 
 
