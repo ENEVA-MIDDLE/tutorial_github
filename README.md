@@ -167,5 +167,16 @@ Para deletar branchs locais, rode o comando:
 ```
 git branch -D nome_da_branch
 ```
-
+#### gitignore - Ignore os arquivos desnecessários ao seu repositório....
+	O ".gitignore" tem a função de ignorar arquivos e pastas que vc não deseja salvar em seu repositório.
+	Sua sintaxe é simples! Para explicar e exemplificar ao mesmo tempo, imaginemos que temos,dentro da raiz do repositório, um arquivo "temporario.txt" e uma pasta
+	"temporario" com seu respectivo conteudo. Todos estes arquivos desejamos ignorar, então criamos um arquivo .gitignore e digitamos dentro dele:
+	
+	```
+	temporario.txt
+	temporario/
+	```
+	Dessa forma, o arquivo txt será ignorado junto da pasta temporario e todo seu conteúdo.
+	ATENÇÃO: se os arquivos temporarios existiam antes da criação do .gitignore, é provável que necessitem ser excluídos, pois a regra vale a partir do momento da criação
+	da mesma.
 </p>
